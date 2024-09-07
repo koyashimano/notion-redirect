@@ -10,7 +10,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const code = urlParams.get("code");
       if (code == null) {
-        window.location.replace("/fallback.html");
+        window.location.replace("/notion-redirect/fallback");
       } else {
         window.location.replace(`notionmobile://oauth/callback?code=${code}`);
       }
